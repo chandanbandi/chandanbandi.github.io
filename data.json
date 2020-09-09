@@ -1,0 +1,51 @@
+[{
+    "id": "0",
+	"name": "State of Tennessee",
+    "image": "Tnatlas.png",
+    "shot": "tnatlasShot.jpg",
+    "checkvideo": false,
+    "screenshots": ["tnatlas0.png", "tnatlas1.png","tnatlas2.png", "tnatlas3.png", "tnatlas3_1.png"],
+    "desc": "TNAtlas is an innovative and important step in the effort to continually improve teacher preparation. The online system is designed to facilitate data-driven, continuous improvement practices and processes for EPPs. TNAtlas will provide access to current and historical EPP Annual Reports, operationalize EPP review and approval processes, and facilitate data collection for research purposes."
+},{
+    "id": "1",
+	"name": "Michigan Tech University",
+    "image": "Mtu.png",
+    "shot": "mtuShot.jpg",
+    "checkvideo": false,
+    "screenshots": ["mtu1.png", "mtu2.png","mtu3.png"],
+    "desc": "University Marketing and Communications (UMC) is a team of strategy-first brand champions. It helps to communicate Michigan Tech voices, opportunities, and experiences to the entire world. Academic departments, divisions, institutes, and organizations collaborate with UMC to promote undergraduate and graduate student enrollment, cultivate alumni affinity and support, and position our faculty researchers as leading scholars"
+},{
+    "id": "2",
+	"name": "Cricmetric",
+    "image": "cricmetric.gif",
+    "shot": "cricmetricShot.jpg",
+    "checkvideo": false,
+    "screenshots": ["cricmetric1.jpg", "cricmetric2.jpg","cricmetric3.jpg", "cricmetric4.jpg"],
+    "desc": "Cricmetric provides detailed insight into the performance of Cricket players, and the game of Cricket in general. Cricmetric was conceptualized and founded at the Massachusetts Institute of Technology. The aim of Cricmetric is to become the 'Moneyball' of Cricket."
+}, {
+    "id": "3",
+	"name": "SunTrust Bank",
+    "image": "Suntrust.png",
+    "shot": "suntrustShot.jpg",
+    "checkvideo": true,
+    "video": "suntrustpages.mp4",
+    "screenshots":["suntrustpages.mp4"],
+    "desc": "Online Banking Modernization (OLBM) is the signature & core retail banking transformation & complete make-over program of a US based bank as part of its larger Omni-channel business strategy to conclusively boost its competitive edge in US market. This online web application is used by the customers of US based bank for transactions, downloading statements, checking account details etc. The new application developed is adaptive; it adapts to wide range of mobiles, tablets and desktops. The website gets on an average 19-27 logins per second."
+
+}, {
+    "id": "4",
+	"name": "Lavandoo Infoteq",
+    "image": "Lavandoo.png",
+    "shot": "lavandooShot.jpg",
+    "checkvideo": false,
+    "screenshots":["lavandoo1.jpg", "lavandoo2.jpg","lavandoo3.jpg", "lavandoo4.jpg"],
+    "desc": "Lead a Good Life (LaGL) is a web portal where the information of all the processed food details are available along with the nutritional values. LaGL is a comprehensive Health, Wellness and lifestyle manager that enables users to easily monitor daily dietary habits, physical activity as well as vital signs through integration of Tele Medical Devices."
+}, {
+    "id": "5",
+	"name": "Socialmaps",
+    "image": "Socialmaps.png",
+    "shot": "socialmapsShot.jpg",
+    "checkvideo": false,
+    "screenshots": ["socialmaps1.jpg", "socialmaps2.jpg","socialmaps3.jpg", "socialmaps4.jpg"],
+    "desc": "Social Maps serves as a social integration platform that orbits online social networks and maps social relationships. The platform seeks to be a one stop platform to view your online contacts in a coherent, informative, and a user friendly manner."
+}]
