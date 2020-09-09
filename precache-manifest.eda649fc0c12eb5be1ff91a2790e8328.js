@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f23dbb8305943891687495f3dc98500a",
+    "revision": "f4fff3ff161a6cb36ec8827613db3e61",
     "url": "/index.html"
   },
   {
-    "revision": "0c3fc3cd2558e71abdec",
+    "revision": "fdfb018a4861d0e31699",
     "url": "/static/css/main.10d695eb.chunk.css"
   },
   {
-    "revision": "f6f1108c06f866c97eb6",
-    "url": "/static/js/2.88efb32c.chunk.js"
+    "revision": "72d6ace86222c7207f45",
+    "url": "/static/js/2.9c1f2a3f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.88efb32c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.9c1f2a3f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c3fc3cd2558e71abdec",
-    "url": "/static/js/main.0d966a4e.chunk.js"
+    "revision": "fdfb018a4861d0e31699",
+    "url": "/static/js/main.b47cae23.chunk.js"
   },
   {
     "revision": "9b41c7e13f690904baac",
     "url": "/static/js/runtime-main.c3e8af0c.js"
+  },
+  {
+    "revision": "8091c414a6ef26c4517ff68c1efefa65",
+    "url": "/static/media/ChandanBandi_resume.8091c414.pdf"
   },
   {
     "revision": "4fc5c26b7b68057503e480cb953aea22",
