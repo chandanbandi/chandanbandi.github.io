@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:900");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+    background: #f5f5dc;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar .nav-link{
+    padding: 1rem;
+}
+
+.home .navbar.nav-bg{
+    background-color: #ff8a65;
+}
+
+.home .navbar.nav-bg .active{
+    background-color: #ffa88d;
+}
+
+.about .navbar.nav-bg{
+    background-color: #ef5350;
+}
+
+.about .navbar.nav-bg .active{
+    background-color: #fa7a78;
+}
+
+.work .navbar.nav-bg{
+    background-color: #e91e63;
+}
+
+.work .navbar.nav-bg .active{
+    background-color: #f85a90;
+}
+
+.contact .navbar.nav-bg{
+    background-color: #f44336;
+}
+
+.contact .navbar.nav-bg .active{
+    background-color: #f67066;
+}
+
+.about .container-fluid{
+    color: #ef5350;
+}
+
+.about .link-primary{
+    color: #ef5350;
+}
+
+.about .link-primary:hover{
+    color: #ff0500;
+}
+
+.work .container-fluid{
+    color: #e91e63;  
+}
+
+.contact .container-fluid{
+    color: #f44336;  
+}
+
+.prime-logo {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 8.5rem;
+    margin: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    width: 100%;
+    text-shadow: 0 1px 0 #fb8c00, 0 2px 0 #fb8c00, 0 3px 0 #ffa726, 0 4px 0 #ff9800, 0 5px 0 #ff9800, 0 6px 0 #f57c00, 0 7px 0 #f57c00, 0 8px 0 #ff9800, 0 0 5px rgb(230 185 139 / 0%), 0 -1px 3px rgb(234 195 147 / 20%), 0 9px 9px rgb(230 185 139 / 30%), 0 12px 12px rgb(230 185 139 / 30%), 0 15px 15px rgb(230 198 139 / 30%);
+}
+
+.prime-text {
+    font-family: 'lobster', sans-serif;
+    color: #ff8a65;
+    text-shadow: 0 8px 0 #ffe4e4;
+    font-size: 4rem;
+    margin-bottom: .5em;
+}
+
+.home .btn.btn-outline-primary {
+    border-color: #ff8a65;
+    color: #ff8a65;
+}
+
+.home .btn.btn-outline-primary:hover {
+    background-color: #ff8a65;
+    color: #fff;
+}
+
+.about .btn.btn-outline-primary {
+    border-color: #ef5350;
+    color: #ef5350;
+}
+
+.about .btn.btn-outline-primary:hover {
+    background-color: #ef5350;
+    color: #fff;
+}
+
+.about h1, .about h2 {
+    font-family: 'lobster', sans-serif;
+}
+
+.about .card-text {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.4rem;
+}
+
+.about .list-group-item {
+    border: 1px solid rgb(239 83 80 / 38%);
+    color: #ef5350;
+}
+
+.about span.rounded-pill {
+    background-color: #ef5350!important;
+    box-shadow: 5px 1px 6px 1px rgba(114, 114, 114, 0.65);
+}
+
+.about .img-thumbnail {
+    border-color: #ef5350;
+}
+
+.work h1{
+    font-family: 'lobster', sans-serif;
+}
+
+.work .heading{
+    font-family: 'lobster', sans-serif;
+    font-size: 1.6rem;
+}
+
+.work .content{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+}
+
+.work .card-parent{
+    border: 3px solid #e91e63;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+}
+
+.work .card-child{
+    background: #fff;
+    padding: 1.2rem;
+}
+
+.work .card-child a{
+    display: block;
+}
+
+.work .card-child a:hover img{
+    opacity: 0.75;
+}
+
+.contact h1{
+    font-family: 'lobster', sans-serif;
+}
+
+.contact .card{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+}
+
+.contact .card a{
+    color: #f44336;
+}
+
+.contact .card a:hover{
+    color: #ba1206;
+}
+
+.contact .card-body{
+    border: 3px solid #f44336;
+}
