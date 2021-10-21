@@ -3,50 +3,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 body{
-    background: #f5f5dc;
+    background: #ffffff;
+}
+
+.masthead{
+    height: 100vh;
+    background: url("../Images/colorphoto.svg") no-repeat top center fixed;
+    background-size: cover;
 }
 
 .navbar{
     padding: 0;
 }
 
-.navbar .nav-link{
+.navbar.nav-bg .nav-link{
     padding: 1rem;
+    color: #ffffff;
 }
 
-.home .navbar.nav-bg{
-    background-color: #ff8a65;
+.navbar.nav-bg .navbar-toggler{
+    border-color: #ffffff;
 }
 
-.home .navbar.nav-bg .active{
+.navbar.nav-bg .nav-link:hover{
+    color: #ffffff;
+}
+
+.navbar.nav-bg{
+    background-color: #747474;
+}
+
+.navbar.nav-bg .active{
     background-color: #ffa88d;
 }
 
-.about .navbar.nav-bg{
-    background-color: #ef5350;
-}
-
-.about .navbar.nav-bg .active{
-    background-color: #fa7a78;
-}
-
-.work .navbar.nav-bg{
-    background-color: #e91e63;
-}
-
-.work .navbar.nav-bg .active{
-    background-color: #f85a90;
-}
-
-.contact .navbar.nav-bg{
-    background-color: #f44336;
-}
-
-.contact .navbar.nav-bg .active{
-    background-color: #f67066;
-}
-
-.about .container-fluid{
+.about.container-fluid{
     color: #ef5350;
 }
 
@@ -58,11 +49,11 @@ body{
     color: #ff0500;
 }
 
-.work .container-fluid{
+.work.container-fluid{
     color: #e91e63;  
 }
 
-.contact .container-fluid{
+.contact.container-fluid{
     color: #f44336;  
 }
 
@@ -80,14 +71,15 @@ body{
 .prime-text {
     font-family: 'lobster', sans-serif;
     color: #ff8a65;
-    text-shadow: 0 8px 0 #ffe4e4;
+    text-shadow: 4px 2px 3px #000000;
     font-size: 4rem;
     margin-bottom: .5em;
 }
 
-.home .btn.btn-outline-primary {
+.home .btn.btn-primary {
+    background-color: #ff8a65;
     border-color: #ff8a65;
-    color: #ff8a65;
+    color: #ffffff;
 }
 
 .home .btn.btn-outline-primary:hover {

@@ -1,3 +1,3 @@
-# chandanbandi.github.io
+# Professional Portfolio
 
-## This is the repository intended for the professional portfolio displaying front end expertise.
+This is the repository intended for the professional portfolio(https://chandanbandi.github.io/) displaying front end expertise.
