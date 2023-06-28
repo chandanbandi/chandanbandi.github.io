@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ffffff;
+    background: #A3a3a3;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,6 +14,10 @@ body {
     height: 100vh;
     background: url("../Images/chandan.png") no-repeat top center fixed;
     background-size: cover;
+}
+
+.masthead .container-fluid {
+    background: rgb(0 0 0 / 50%);
 }
 
 .navbar {
