@@ -1,0 +1,47 @@
+.navbar {
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-menu {
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a.item {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-menu a.item:hover {
+    color: var(--yellow);
+}
+
+.pending {
+    color: var(--yellow);
+}
+
+.nav-menu a.active {
+    color: var(--yellow);
+    text-decoration: none;
+    border-bottom: 2px solid var(--yellow);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .nav-menu {
+        gap: 1.2rem;
+    }
+    
+}

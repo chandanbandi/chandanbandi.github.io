@@ -1,0 +1,64 @@
+.work-grid {
+    grid-template-columns: 15% 1fr;
+    gap: 1.2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    background: #000a41;
+    margin: 0.25rem;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .75rem;
+}
+
+.sidebar ul li a.item{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.sidebar ul li a.item:hover{
+    cursor: pointer;
+    background: var(--yellow);
+    color: var(--dark-bg);
+}
+
+.sidebar ul li a.active{
+    background: var(--yellow);
+    color: var(--dark-bg);
+    text-decoration: none;
+}
+
+.button-round {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    background: var(--yellow);
+    color: var(--dark-bg);
+    cursor: pointer;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}

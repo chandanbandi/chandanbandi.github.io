@@ -1,0 +1,7 @@
+.main-section a {
+    color: var(--yellow);
+}
+
+.main-section .font-bold {
+    font-weight: bold;
+}

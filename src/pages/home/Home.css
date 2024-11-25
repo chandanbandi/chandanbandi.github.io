@@ -1,0 +1,16 @@
+.home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.subtitle{
+    color: var(--yellow);
+}
+
+.mark{
+    background-color: var(--yellow);
+    color: var(--dark-bg);
+}

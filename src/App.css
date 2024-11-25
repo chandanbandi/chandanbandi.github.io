@@ -1,0 +1,33 @@
+.room {
+    grid-template-rows: 104px 1fr 104px;
+}
+
+@keyframes fadeInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+
+.fade-in-left{
+    animation: 1.5s fadeInLeft;
+}
+
+.fade-in-up{
+    animation: 1.5s fadeInUp;
+}
