@@ -24,7 +24,9 @@ export default function WorkDetails() {
                     if (exp.id == Number(id)) {
                         return (
                             <div key={exp.id}>
-                                <h2 className="card-heading mb-2">{exp.company}</h2>
+                                <div className="card-heading mb-2">
+                                    <h2 className="">{exp.company}</h2>
+                                </div>
                                 <div className="mb-1 text-xl tracking-tight text-slate-200 dark:text-slate-100">{parse(exp.details)}</div>
                                 {
                                     exp.screens.map((screen) => {

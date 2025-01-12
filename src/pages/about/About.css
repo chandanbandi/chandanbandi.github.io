@@ -6,10 +6,10 @@
 
 .sub-section .card-heading {
     display: inline;
-    color: var(--yellow);
+    color: var(--red);
     text-transform: uppercase;
     letter-spacing: .5rem;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--red);
 }
 
 .sub-section .card-grid {

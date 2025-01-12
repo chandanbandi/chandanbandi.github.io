@@ -1,12 +1,23 @@
 .rating-card {
-    background-color: var(--yellow);
     padding: 2rem;
     border-radius: 1rem;
-    color: var(--dark-bg);
+    color: var(--slate);
 }
 
-.rating-card:hover {
+.light .rating-card {
+    background-color: var(--red);
+}
+
+.dark .rating-card {
     background-color: var(--dark-yellow);
+}
+
+.light .rating-card:hover {
+    background-color: var(--dark-yellow);
+}
+
+.dark .rating-card:hover {
+    background-color: var(--red);
 }
 
 .rating-card h3{
@@ -29,5 +40,5 @@
 .rating-full {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--dark-bg);
+    color: var(--slate);
 }

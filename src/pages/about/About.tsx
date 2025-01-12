@@ -7,8 +7,8 @@ function About() {
         <h1>About</h1>
       </header>
       <section className='main-section'>
-        <p className='mb-1'>Hi, I'm Chandan Bandi and I'm specialized in creating beautiful and professional websites. Through my first job, I found my passion in UX design and front-end development. When I'm not creating beautiful solutions, I enjoy sketching nature art and cooking.</p>
-        <p>I design both web and mobile solutions which are of highest quality, fully responsive, and also test in a wide range of devices. If you are a recruiter and interested in my profile then please check out my Portfolio.</p>
+        <p className='mb-1'>Hi, I'm Chandan Bandi, and I specialize in creating beautiful and professional websites. Through my first job, I discovered my passion for UX design and front-end development. When I'm not crafting elegant solutions, I enjoy sketching nature-inspired art and cooking.</p>
+        <p>I design high-quality web and mobile solutions that are fully responsive and thoroughly tested across a wide range of devices. If you're a recruiter interested in my profile, please take a look at my portfolio.</p>
         <div className='mt-1'>
           <a href='doc/ChandanBandi_Resume.pdf' target='_blank' className="inline-flex cta-link items-center font-medium text-yellow-500 hover:underline">
             Download Resume

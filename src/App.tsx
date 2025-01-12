@@ -3,6 +3,8 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import { Outlet } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from './state/store'
 
 
 function App() {
@@ -16,12 +18,14 @@ function App() {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [])
+  }, []);
+
+  const theme = useSelector((state: RootState) => state.theme.theme);
   return (
     <>
-      <div className='room grid h-100'>
+      <div className={`room grid h-100 ${theme}`}>
         <Header />
-        <main>
+        <main className='main'>
           <Outlet />
         </main>
         <Footer />

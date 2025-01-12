@@ -6,11 +6,15 @@
 }
 
 .side-section .card-heading {
-    display: inline-block;
-    color: var(--yellow);
+    color: var(--red);
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: .5rem;
-    border-bottom: 2px solid var(--yellow);
+}
+
+.side-section .card-heading h2{
+    display: inline;
+    border-bottom: 2px solid var(--red);
 }
 
 .side-section .card-grid {

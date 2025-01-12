@@ -3,14 +3,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.dark .home {
     color: var(--white);
 }
 
-.subtitle{
-    color: var(--yellow);
+.dark .subtitle{
+    color: var(--dark-yellow);
 }
 
-.mark{
-    background-color: var(--yellow);
-    color: var(--dark-bg);
+.light .home {
+    color: var(--slate);
+}
+
+.light .subtitle{
+    color: var(--red);
+}
+
+.light .mark{
+    background-color: var(--red);
+    color: var(--slate);
+}
+
+.dark .mark{
+    background-color: var(--dark-yellow);
+    color: var(--slate);
 }

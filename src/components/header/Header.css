@@ -16,23 +16,30 @@
     padding: 0;
 }
 
-.nav-menu a.item {
-    text-decoration: none;
+.light .nav-menu a {
+    color: var(--slate);
+}
+
+.dark .nav-menu a {
     color: var(--white);
 }
 
+.nav-menu a.item {
+    text-decoration: none;
+}
+
 .nav-menu a.item:hover {
-    color: var(--yellow);
+    color: var(--red);
 }
 
 .pending {
-    color: var(--yellow);
+    color: var(--red);
 }
 
 .nav-menu a.active {
-    color: var(--yellow);
+    color: var(--red);
     text-decoration: none;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--red);
 }
 
 @media screen and (max-width: 768px) {

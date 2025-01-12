@@ -3,6 +3,15 @@
     gap: 1.2rem;
 }
 
+.sidebar {
+    display: inline;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) transparent;
+}
+
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -28,33 +37,22 @@
 
 .sidebar ul li a.item:hover{
     cursor: pointer;
-    background: var(--yellow);
+    background: var(--red);
     color: var(--dark-bg);
 }
 
 .sidebar ul li a.active{
-    background: var(--yellow);
+    background: var(--red);
     color: var(--dark-bg);
     text-decoration: none;
 }
 
-.button-round {
+.button-fixed {
     position: fixed;
-    z-index: 999;
-    border-radius: 50%;
-    border: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .75rem;
-    background: var(--yellow);
-    color: var(--dark-bg);
-    cursor: pointer;
     bottom: 1rem;
     right: 1rem;
 }
+
 
 @media screen and (max-width: 425px) {
     .work-grid {
