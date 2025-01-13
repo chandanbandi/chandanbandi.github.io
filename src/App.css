@@ -1,6 +1,7 @@
 .room {
     grid-template-rows: 104px 1fr 104px;
     grid-template-columns: 1fr;
+    min-height: 100vh;
 }
 
 @keyframes fadeInLeft {

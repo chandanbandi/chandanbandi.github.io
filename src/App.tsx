@@ -23,7 +23,7 @@ function App() {
   const theme = useSelector((state: RootState) => state.theme.theme);
   return (
     <>
-      <div className={`room grid h-100 ${theme}`}>
+      <div className={`room grid ${theme}`}>
         <Header />
         <main className='main'>
           <Outlet />
