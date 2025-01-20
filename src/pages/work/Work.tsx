@@ -16,7 +16,6 @@ function Work() {
   }, []);
 
   const scrollToTop = () => {
-    console.log(window);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
