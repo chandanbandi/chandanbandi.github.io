@@ -144,17 +144,15 @@ const Barchart = ({
         .attr("y", d => y(Number(d[Value])) - 5);
 
       // Add hover effects
-      bars.on("mouseover", function(event, d) {
+      bars.on("mouseover", function(_event, d) {
         d3.select(this)
           .transition()
           .duration(200)
           .attr("fill", "#8b5cf6")
           .attr("width", x.bandwidth() * 1.1)
           .attr("x", (x(String(d[Key])) || 0) - (x.bandwidth() * 0.05));
-
-        d3.select(this.parentNode)
-          .append("text")
-          .attr("class", "tooltip")
+        svg.append("text")
+          .attr("class", "tooltip") 
           .attr("x", (x(String(d[Key])) || 0) + x.bandwidth() / 2)
           .attr("y", y(Number(d[Value])) - 15)
           .attr("text-anchor", "middle")
@@ -162,13 +160,12 @@ const Barchart = ({
           .style("font-weight", "bold")
           .text(`${d[Key]}: ${d[Value]}`);
       })
-      .on("mouseout", function(event, d) {
+      .on("mouseout", function() {
         d3.select(this)
           .transition()
           .duration(200)
           .attr("fill", "url(#bar-gradient)")
-          .attr("width", x.bandwidth())
-          .attr("x", x(String(d[Key])));
+          .attr("width", x.bandwidth());
 
         d3.selectAll(".tooltip").remove();
       });

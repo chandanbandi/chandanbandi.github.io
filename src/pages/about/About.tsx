@@ -1,4 +1,3 @@
-import Rating from '../../components/rating/Rating'
 import './About.css'
 import Barchart from '../../components/Barchart/Barchart';
 function About() {
