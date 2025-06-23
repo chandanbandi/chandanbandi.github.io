@@ -50,7 +50,7 @@
       "screens": [
         {
           "id": 1,
-          "src": "/VT/VT.mp4",
+          "src": "/VT/vt1.png",
           "alt": "Virginia Tech"
         }
       ]
@@ -65,7 +65,7 @@
       "screens": [
         {
           "id": 1,
-          "src": "/ODU/ODU.mp4",
+          "src": "/ODU/odu1.png",
           "alt": "ODU"
         }
       ]
