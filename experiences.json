@@ -1,0 +1,224 @@
+{
+  "experiences": [
+    {
+      "id": 0,
+      "company": "Sogeti (OCLC)",
+      "details": "WorldCat.org is a great resource for locating unique, trustworthy materials that you often can't find anywhere except in a library.And by connecting thousands of libraries' collections in one place, WorldCat.org makes it easy for you to browse the world's libraries from one easy search box.",
+      "hasVideo": false,
+      "thumbnail": "/Sogeti/Worldcat-1.png",
+      "year": "2025",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/Sogeti/Worldcat-1.png",
+          "alt": "Worldcat screen 1"
+        },
+        {
+          "id": 2,
+          "src": "/Sogeti/Worldcat-2.png",
+          "alt": "Worldcat screen 2"
+        },
+        {
+          "id": 3,
+          "src": "/Sogeti/Worldcat-3.png",
+          "alt": "Worldcat screen 3"
+        },
+        {
+          "id": 4,
+          "src": "/Sogeti/Worldcat-4.png",
+          "alt": "Worldcat screen 4"
+        },
+        {
+          "id": 5,
+          "src": "/Sogeti/Worldcat-5.png",
+          "alt": "Worldcat screen 5"
+        },
+        {
+          "id": 6,
+          "src": "/Sogeti/Worldcat-6.png",
+          "alt": "Worldcat screen 6"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "company": "Virginia Tech",
+      "details": "Dedicated to its motto, Ut Prosim (That I May Serve), Virginia Tech pushes the boundaries of knowledge by taking a hands-on, transdisciplinary approach to preparing scholars to be leaders and problem-solvers. As the commonwealth's most comprehensive university and a leading research institution, Virginia Tech offers about 280 undergraduate and graduate degree programs to more than 37,000 undergraduate, graduate, and professional students across the commonwealth and manages a research portfolio of more than $556 million. The university fulfills its role as a land-grant institution by fostering a collaborative environment that integrates technology into all disciplines, so that the Virginia Tech community can serve as a force for positive change around the commonwealth, the country, and the world.",
+      "hasVideo": true,
+      "thumbnail": "/VT/vt1.png",
+      "year": "2021",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/VT/VT.mp4",
+          "alt": "Virginia Tech"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Old Dominion University",
+      "details": "The Center for Learning and Teaching (CLT), established in 1994 as part of the University's Strategic Plan, serves the University by assisting faculty members to use and integrate technology into the teaching/learning process. CLT offers a wide variety of services related to faculty support. Among those services are 1.instructional design and technology 2.course design and development 3.individual course management 4.one-on-one consultation 5.course website development 6.workshops 7.proctored testing 8.graphic design of posters and instructional aids 9.and demonstration and evaluation of tools and technologies.",
+      "hasVideo": true,
+      "thumbnail": "/ODU/odu1.png",
+      "year": "2021",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/ODU/ODU.mp4",
+          "alt": "ODU"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "company": "State of Tennessee",
+      "details": "TNAtlas is an innovative and important step in the effort to continually improve teacher preparation. The online system is designed to facilitate data-driven, continuous improvement practices and processes for EPPs. TNAtlas will provide access to current and historical EPP Annual Reports, operationalize EPP review and approval processes, and facilitate data collection for research purposes.",
+      "hasVideo": false,
+      "thumbnail": "/TN/TN1.png",
+      "year": "2019",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/TN/TN1.png",
+          "alt": "TN screen 1"
+        },
+        {
+          "id": 2,
+          "src": "/TN/TN2.png",
+          "alt": "TN screen 2"
+        },
+        {
+          "id": 3,
+          "src": "/TN/TN3.png",
+          "alt": "TN screen 3"
+        },
+        {
+          "id": 4,
+          "src": "/TN/TN4.png",
+          "alt": "TN screen 4"
+        },
+        {
+          "id": 5,
+          "src": "/TN/TN5.png",
+          "alt": "TN screen 5"
+        },
+        {
+          "id": 6,
+          "src": "/TN/TN6.png",
+          "alt": "TN screen 6"
+        },
+        {
+          "id": 7,
+          "src": "/TN/TN7.png",
+          "alt": "TN screen 7"
+        },
+        {
+          "id": 8,
+          "src": "/TN/TN8.png",
+          "alt": "TN screen 8"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Michigan Tech University",
+      "details": "University Marketing and Communications (UMC) is a team of strategy-first brand champions. It helps to communicate Michigan Tech voices, opportunities, and experiences to the entire world. Academic departments, divisions, institutes, and organizations collaborate with UMC to promote undergraduate and graduate student enrollment, cultivate alumni affinity and support, and position our faculty researchers as leading scholars in their fields.",
+      "hasVideo": false,
+      "thumbnail": "/MTU/mtu1.png",
+      "year": "2017",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/MTU/mtu1.png",
+          "alt": "MTU screen 1"
+        },
+        {
+          "id": 2,
+          "src": "/MTU/mtu2.png",
+          "alt": "MTU screen 2"
+        },
+        {
+          "id": 3,
+          "src": "/MTU/mtu3.png",
+          "alt": "MTU screen 3"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "company": "Cricmetric",
+      "details": "Cricmetric provides detailed insight into the performance of Cricket players, and the game of Cricket in general. Cricmetric was conceptualized and founded at the Massachusetts Institute of Technology. The aim of Cricmetric is to become the 'Moneyball' of Cricket.",
+      "hasVideo": false,
+      "thumbnail": "/Cricmetric/cricmetric1.jpg",
+      "year": "2016",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/Cricmetric/cricmetric1.jpg",
+          "alt": "Cricmetric screen 1"
+        },
+        {
+          "id": 2,
+          "src": "/Cricmetric/cricmetric2.jpg",
+          "alt": "Cricmetric screen 2"
+        },
+        {
+          "id": 3,
+          "src": "/Cricmetric/cricmetric3.jpg",
+          "alt": "Cricmetric screen 3"
+        },
+        {
+          "id": 4,
+          "src": "/Cricmetric/cricmetric4.jpg",
+          "alt": "Cricmetric screen 4"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "company": "SunTrust Bank",
+      "details": "Online Banking Modernization (OLBM) is the signature & core retail banking transformation & complete make-over program of a US based bank as part of its larger Omni-channel business strategy to conclusively boost its competitive edge in US market. This online web application is used by the customers of US based bank for transactions, downloading statements, checking account details etc. The new application developed is adaptive; it adapts to wide range of mobiles, tablets and desktops. The website gets on an average 19-27 logins per second.",
+      "hasVideo": true,
+      "thumbnail": "/SunTrust/suntrustShot.jpg",
+      "year": "2013",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/SunTrust/suntrustPages.mp4",
+          "alt": "SunTrust screen 1"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "company": "Lavandoo Infoteq",
+      "details": "Lead a Good Life (LaGL) is a web portal where the information of all the processed food details are available along with the nutritional values. LaGL is a comprehensive Health, Wellness and lifestyle manager that enables users to easily monitor daily dietary habits, physical activity as well as vital signs through integration of Tele Medical Devices.",
+      "hasVideo": false,
+      "thumbnail": "/Lavandoo/lavandoo1.jpg",
+      "year": "2012",
+      "screens": [
+        {
+          "id": 1,
+          "src": "/Lavandoo/lavandoo1.jpg",
+          "alt": "Lavandoo screen 1"
+        },
+        {
+          "id": 2,
+          "src": "/Lavandoo/lavandoo2.jpg",
+          "alt": "Lavandoo screen 2"
+        },
+        {
+          "id": 3,
+          "src": "/Lavandoo/lavandoo3.jpg",
+          "alt": "Lavandoo screen 3"
+        },
+        {
+          "id": 4,
+          "src": "/Lavandoo/lavandoo4.jpg",
+          "alt": "Lavandoo screen 4"
+        }
+      ]
+    }
+  ]
+}
