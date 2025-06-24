@@ -1,0 +1,22 @@
+{
+    "skills": [
+        {
+            "label": "Web Development",
+            "description": "Building responsive, performant, and accessible websites using modern technologies.",
+            "screens": [
+                "/WebDev/1.png",
+                "/WebDev/2.png",
+                "/WebDev/3.png"
+            ]
+        },
+        {
+            "label": "UI/UX Design",
+            "description": "Designing intuitive and engaging user interfaces and experiences.",
+            "screens": [
+                "/UIUX/1.png",
+                "/UIUX/2.png",
+                "/UIUX/3.png"
+            ]
+        }
+    ]
+}

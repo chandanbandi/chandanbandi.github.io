@@ -1,0 +1,171 @@
+@use '../variables';
+.header {
+    padding: variables.$spacing-md variables.$spacing-lg;
+    position: sticky;
+    top: 0;
+    z-index: variables.$z-index-header;
+    
+    .light & {
+      background-color: rgba(variables.$light-bg, 0.95);
+    }
+    
+    .dark & {
+      background-color: rgba(variables.$dark-bg, 0.95);
+    }
+    
+    @media (min-width: variables.$breakpoint-md) {
+      padding: variables.$spacing-md variables.$spacing-xl;
+    }
+    
+    @media (min-width: variables.$breakpoint-lg) {
+      padding: variables.$spacing-md variables.$spacing-2xl;
+    }
+    
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    
+    &__logo {
+      font-family: variables.$font-primary;
+      font-size: variables.$font-size-2xl;
+      font-weight: 500;
+      transition: transform variables.$transition-fast;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: variables.$spacing-md;
+    }
+    
+    
+
+    &__theme-toggle,
+    &__menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: variables.$spacing-xs;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      transition: background-color variables.$transition-fast;
+      
+      .light & {
+        background-color: variables.$light-bg;
+        &:hover {
+          background-color: rgba(variables.$color-gray-300, 0.3);
+        }
+      }
+      
+      .dark & {
+        background-color: variables.$light-bg;
+        &:hover {
+          background-color: rgba(variables.$light-bg, 0.5);
+        }
+      }
+    }
+
+    &__menu-toggle {
+      display: flex;
+      @media (min-width: variables.$breakpoint-md) {
+        display: none;
+      }
+    }
+    
+    &__nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      padding: 6rem variables.$spacing-lg variables.$spacing-lg;
+      transform: translateX(100%);
+      transition: transform variables.$transition-normal;
+      z-index: -1;
+      
+      .light & {
+        background-color: variables.$light-bg;
+      }
+      
+      .dark & {
+        background-color: variables.$dark-bg;
+      }
+      
+      @media (min-width: variables.$breakpoint-md) {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        transform: none;
+        z-index: auto;
+      }
+      
+      &--open {
+        transform: translateX(0);
+      }
+    }
+    
+    &__nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: variables.$spacing-lg;
+      
+      @media (min-width: variables.$breakpoint-md) {
+        flex-direction: row;
+        gap: variables.$spacing-xl;
+      }
+    }
+    
+    &__nav-item {
+      text-align: center;
+      
+      @media (min-width: variables.$breakpoint-md) {
+        text-align: left;
+      }
+    }
+    
+    &__nav-link {
+      font-size: variables.$font-size-xl;
+      position: relative;
+      
+      @media (min-width: variables.$breakpoint-md) {
+        font-size: variables.$font-size-base;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: width variables.$transition-fast;
+        
+        .light & {
+          background-color: variables.$light-text;
+        }
+        
+        .dark & {
+          background-color: variables.$color-golden-100;
+        }
+      }
+
+      &--active{
+        color: variables.$color-golden-100;
+      }
+      
+      &:hover::after,
+      &--active::after {
+        width: 100%;
+      }
+    }
+  }
+  

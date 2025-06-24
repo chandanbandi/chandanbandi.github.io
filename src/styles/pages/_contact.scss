@@ -1,0 +1,187 @@
+@use '../variables';
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: variables.$spacing-2xl 0;
+    
+    &__title {
+      font-size: variables.$font-size-3xl;
+      margin-bottom: variables.$spacing-2xl;
+      text-transform: uppercase;
+      
+      @media (min-width: variables.$breakpoint-md) {
+        font-size: variables.$font-size-4xl;
+      }
+    }
+    
+    &__info {
+      margin-bottom: variables.$spacing-2xl;
+      
+      p {
+        font-size: variables.$font-size-md;
+        margin-bottom: variables.$spacing-xl;
+        
+        @media (min-width: variables.$breakpoint-md) {
+          font-size: variables.$font-size-lg;
+        }
+      }
+    }
+    
+    &__details {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: variables.$spacing-xl;
+      
+      @media (min-width: variables.$breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    &__detail {
+      h3 {
+        font-size: variables.$font-size-md;
+        margin-bottom: variables.$spacing-sm;
+      }
+      
+      a {
+        display: inline-block;
+        margin-bottom: variables.$spacing-xs;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0;
+          height: 1px;
+          transition: width variables.$transition-fast;
+          
+          .light & {
+            background-color: variables.$light-text;
+          }
+          
+          .dark & {
+            background-color: variables.$color-golden-100;
+          }
+        }
+        
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    
+    &__social {
+      a {
+        margin-right: variables.$spacing-md;
+      }
+    }
+    
+    &__subtitle {
+      font-size: variables.$font-size-xl;
+      margin-bottom: variables.$spacing-lg;
+    }
+    
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: variables.$spacing-lg;
+    }
+    
+    &__form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &__label {
+      margin-bottom: variables.$spacing-xs;
+      font-size: variables.$font-size-sm;
+    }
+    
+    &__input,
+    &__textarea {
+      padding: variables.$spacing-md;
+      border: 1px solid;
+      border-radius: 0;
+      background: transparent;
+      transition: border-color variables.$transition-fast;
+      
+      .light & {
+        border-color: rgba(variables.$light-text, 0.2);
+        
+        &:focus {
+          border-color: rgba(variables.$light-text, 0.8);
+          outline: none;
+        }
+      }
+      
+      .dark & {
+        border-color: rgba(variables.$dark-text, 0.2);
+        
+        &:focus {
+          border-color: rgba(variables.$dark-text, 0.8);
+          outline: none;
+        }
+      }
+    }
+    
+    &__submit {
+      align-self: flex-start;
+      padding: variables.$spacing-md variables.$spacing-xl;
+      margin-top: variables.$spacing-md;
+      border: 1px solid;
+      transition: all variables.$transition-fast;
+      
+      .light & {
+        border-color: variables.$light-text;
+        color: variables.$light-text;
+        
+        &:hover {
+          background-color: variables.$light-text;
+          color: variables.$light-bg;
+        }
+        
+        &:disabled {
+          border-color: rgba(variables.$light-text, 0.3);
+          color: rgba(variables.$light-text, 0.3);
+          cursor: not-allowed;
+        }
+      }
+      
+      .dark & {
+        border-color: variables.$dark-text;
+        color: variables.$dark-text;
+        
+        &:hover {
+          background-color: variables.$dark-text;
+          color: variables.$dark-bg;
+        }
+        
+        &:disabled {
+          border-color: rgba(variables.$dark-text, 0.3);
+          color: rgba(variables.$dark-text, 0.3);
+          cursor: not-allowed;
+        }
+      }
+    }
+    
+    &__success {
+      padding: variables.$spacing-lg;
+      border: 1px solid;
+      text-align: center;
+      
+      .light & {
+        border-color: rgba(variables.$light-text, 0.2);
+      }
+      
+      .dark & {
+        border-color: rgba(variables.$dark-text, 0.2);
+      }
+      
+      p {
+        margin: 0;
+      }
+    }
+  }
+  

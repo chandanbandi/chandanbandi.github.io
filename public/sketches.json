@@ -1,0 +1,40 @@
+{
+    "skills": [
+        {
+            "label": "Pikachu",
+            "src": "/Sketches/Pikachu.jpg",
+            "description": "Pikachu is a fictional character in the Pokemon franchise. He is a small, yellow mouse-like pokemon with a long tail and a round face. He is known for his ability to generate electricity."
+        },
+        {
+            "label": "Doctor Strange",
+            "src": "/Sketches/Strange.jpg",
+            "description": "Doctor Strange is a fictional character in the Marvel Comics universe. He is a powerful wizard who uses his abilities to protect the world from evil forces."
+        },
+        {
+            "label": "Burning Flame",
+            "src": "/Sketches/BurningFlame.jpg",
+            "description": "Burning flame represents the fiery passion of a person or a place."
+        },
+        {
+            "label": "Krishna",
+            "src": "/Sketches/Krishna.jpg",
+            "description": "Krishna is a Hindu god of power, wisdom, and knowledge."
+        },
+        {
+            "label": "Mandala",
+            "src": "/Sketches/Mandala.jpg",
+            "description": "A mandala is a circular pattern of lines and symbols used in Hinduism and Buddhism to represent spiritual guidance and harmony."
+        },
+        {
+            "label": "Parrot",
+            "src": "/Sketches/Parrot.jpg",
+            "description": "Parrots are a group of birds that are known for their ability to mimic human speech and gestures."
+        },
+        {
+            "label": "Shiva",
+            "src": "/Sketches/Shiva.jpg",
+            "description": "Shiva is a Hindu god of love, peace, and prosperity."
+        }
+    ]
+}
+    

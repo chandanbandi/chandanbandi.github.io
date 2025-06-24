@@ -1,0 +1,84 @@
+@use 'variables';
+@use 'sass:color';
+
+:root {
+  // Light theme variables
+  --bg-color: #{variables.$light-bg};
+  --text-color: #{variables.$light-text};
+  --text-secondary: #{variables.$color-gray-600};
+  --accent-color: #{variables.$light-accent};
+  --accent-hover: #{color.adjust(variables.$light-accent, $lightness: 10%)};
+  --border-color: #{variables.$color-gray-200};
+}
+
+body {
+  &.light {
+    background-color: variables.$light-bg;
+    color: variables.$light-text;
+    
+    // Light theme variables
+    --bg-color: #{variables.$light-bg};
+    --text-color: #{variables.$light-text};
+    --text-secondary: #{variables.$color-gray-600};
+    --accent-color: #{variables.$light-accent};
+    --accent-hover: #{color.adjust(variables.$light-accent, $lightness: 10%)};
+    --border-color: #{variables.$color-gray-200};
+  }
+
+  &.dark {
+    background-color: variables.$dark-bg;
+    color: variables.$dark-text;
+    
+    // Dark theme variables
+    --bg-color: #{variables.$dark-bg};
+    --text-color: #{variables.$dark-text};
+    --text-secondary: #{variables.$color-gray-400};
+    --accent-color: #{variables.$dark-accent};
+    --accent-hover: #{color.adjust(variables.$dark-accent, $lightness: -10%)};
+    --border-color: #{variables.$color-gray-700};
+  }
+
+  transition: background-color variables.$transition-normal, color variables.$transition-normal;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: variables.$spacing-lg;
+  
+  @media (min-width: variables.$breakpoint-md) {
+    padding: variables.$spacing-xl;
+  }
+  
+  @media (min-width: variables.$breakpoint-lg) {
+    padding: variables.$spacing-2xl;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: variables.$font-primary;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  transition: color variables.$transition-fast;
+  
+  .light & {
+    &:hover {
+      color: color.adjust(variables.$light-text, $lightness: -20%);
+    }
+  }
+  
+  .dark & {
+    &:hover {
+      color: variables.$color-golden-100;
+    }
+  }
+}
+  

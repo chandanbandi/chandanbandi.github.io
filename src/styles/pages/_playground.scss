@@ -1,0 +1,136 @@
+@use '../variables';
+
+.playground {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    font-size: variables.$font-size-3xl;
+    margin-bottom: variables.$spacing-2xl;
+    text-transform: uppercase;
+
+    @media (min-width: variables.$breakpoint-md) {
+      font-size: variables.$font-size-4xl;
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+  }
+
+  &__imageCarousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: starWarsCrawl 60s linear infinite;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg);
+    width: 100%;
+    max-width: 800px;
+  }
+
+  &__imageWrapper {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    transform: translateZ(0);
+    position: relative;
+  
+    &:hover {
+      transform: translateZ(20px) scale(1.1);
+      cursor: pointer;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+
+      .playground__imageOverlay {
+        opacity: 1;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  &__imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+  &__imageLabel {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes starWarsCrawl {
+  0% {
+    transform: rotateX(45deg) translateY(100vh);
+  }
+  100% {
+    transform: rotateX(45deg) translateY(-100vh);
+  }
+}
+
+// Add fade effects at top and bottom
+.playground::before,
+.playground::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.playground::before {
+  top: 0;
+}
+
+.playground::after {
+  bottom: 0;
+}

@@ -1,0 +1,146 @@
+@use '../variables';
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: variables.$spacing-2xl 0;
+
+  &__title {
+    font-size: variables.$font-size-3xl;
+    margin-bottom: variables.$spacing-2xl;
+    text-transform: uppercase;
+
+    @media (min-width: variables.$breakpoint-md) {
+      font-size: variables.$font-size-4xl;
+    }
+  }
+
+  &__text {
+    margin-bottom: variables.$spacing-2xl;
+
+    p {
+      margin-bottom: variables.$spacing-lg;
+      font-size: variables.$font-size-md;
+
+      @media (min-width: variables.$breakpoint-md) {
+        font-size: variables.$font-size-lg;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: variables.$font-size-xl;
+    margin-bottom: variables.$spacing-lg;
+    text-transform: uppercase;
+  }
+
+  &__skills-tabs {
+    display: flex;
+    gap: variables.$spacing-md;
+    margin-bottom: variables.$spacing-lg;
+    flex-wrap: wrap;
+  }
+
+  &__skills-tab {
+    background: none;
+    border: none;
+    font-family: variables.$font-secondary;
+    font-size: variables.$font-size-md;
+    padding: variables.$spacing-sm variables.$spacing-lg;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: background-color variables.$transition-fast, color variables.$transition-fast;
+    color: variables.$light-text;
+    opacity: 0.7;
+    position: relative;
+    z-index: 1;
+
+    .dark & {
+      color: variables.$dark-text;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      background-color: variables.$color-gray-200;
+
+      .dark & {
+        background-color: variables.$color-gray-800;
+      }
+    }
+  }
+
+  &__skills-tab--active {
+    opacity: 1;
+    background-color: variables.$color-gray-200;
+    color: variables.$color-black;
+
+    .dark & {
+      background-color: variables.$color-gray-700;
+      color: variables.$color-white;
+    }
+
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  &__skills-panel {
+    min-height: 120px;
+    position: relative;
+  }
+
+  &__skills-content {
+    padding: variables.$spacing-lg;
+    background: rgba(variables.$color-white, 0.7);
+    border-radius: variables.$spacing-md;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    .dark & {
+      background: rgba(variables.$color-gray-900, 0.7);
+    }
+  }
+
+  &__skills-label {
+    font-size: variables.$font-size-lg;
+    margin-bottom: variables.$spacing-sm;
+    font-family: variables.$font-primary;
+    font-weight: 500;
+  }
+
+  &__skills-desc {
+    font-size: variables.$font-size-md;
+    color: variables.$color-gray-700;
+
+    .dark & {
+      color: variables.$color-gray-200;
+    }
+  }
+
+  &__skills-tools {
+    margin-top: variables.$spacing-lg;
+  }
+
+  &__skills-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: variables.$spacing-md;
+
+    li {
+      font-size: variables.$font-size-md;
+      padding: variables.$spacing-sm 0;
+    }
+  }
+
+  &__skill-image {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    transform-origin: center;
+
+    &:hover {
+      cursor: pointer;
+      filter: grayscale(0%);
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
