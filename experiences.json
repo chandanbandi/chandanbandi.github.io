@@ -50,7 +50,7 @@
       "screens": [
         {
           "id": 1,
-          "src": "https://www.youtube.com/embed/DGpirw_0pak?si=0dqF7R1RIX0Qkvmd",
+          "src": "https://player.cloudinary.com/embed/?cloud_name=dzunaznej&public_id=h7mj5deyitv3mcwjvqb4&profile=cld-default",
           "alt": "Virginia Tech"
         }
       ]
@@ -65,7 +65,7 @@
       "screens": [
         {
           "id": 1,
-          "src": "/ODU/ODU.mp4",
+          "src": "https://player.cloudinary.com/embed/?cloud_name=dzunaznej&public_id=wym1rqhyn4qsikeuklhu&profile=cld-default",
           "alt": "ODU"
         }
       ]
@@ -185,7 +185,7 @@
       "screens": [
         {
           "id": 1,
-          "src": "/SunTrust/suntrustPages.mp4",
+          "src": "https://player.cloudinary.com/embed/?cloud_name=dzunaznej&public_id=wosneiwhyr1ieomczwuk&profile=cld-default",
           "alt": "SunTrust screen 1"
         }
       ]
