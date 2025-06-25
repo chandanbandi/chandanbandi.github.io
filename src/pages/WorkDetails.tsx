@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useExperiences } from '../hooks/useExperiences'
+import { useVideoUrl } from '../hooks/useVideoUrl'
 
 const WorkDetails = () => {
   const { id } = useParams()
@@ -12,6 +13,7 @@ const WorkDetails = () => {
   const [isAutoplay, setIsAutoplay] = useState(true)
   
   const { loading, error, getProjectById } = useExperiences();
+  const { getDirectVideoUrl } = useVideoUrl();
   const project = getProjectById(Number(id));
 
   if (loading) {
@@ -102,7 +104,7 @@ const WorkDetails = () => {
           >
             {project.hasVideo ? (
               <video
-                src={project.screens[currentScreen].src}
+                src={getDirectVideoUrl(project.screens[currentScreen].src)}
                 controls
                 autoPlay
                 className="work-details__video"

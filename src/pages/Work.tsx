@@ -3,9 +3,11 @@
 import { motion } from 'motion/react'
 import { Link } from "react-router-dom"
 import { useExperiences } from '../hooks/useExperiences'
+import { useVideoUrl } from '../hooks/useVideoUrl'
 
 const Work = () => {
   const { projects, loading, error } = useExperiences();
+  const { getDirectVideoUrl } = useVideoUrl();
 
   if (loading) {
     return (
@@ -51,7 +53,9 @@ const Work = () => {
               <Link to={`/work/${project.id}`} className="work__item-link">
                 <div className="work__item-image">
                   {project.hasVideo ? (
-                    <video src={project.screens[0].src} autoPlay muted loop playsInline />
+                    <video autoPlay muted loop playsInline>
+                      <source src={getDirectVideoUrl(project.screens[0].src)} type="video/mp4" />
+                    </video>
                   ) : (
                     <img src={project.thumbnail} alt={project.company} />
                   )}
